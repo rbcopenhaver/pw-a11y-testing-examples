@@ -1,0 +1,33 @@
+{
+  "name": "pw-a11y-testing-examples",
+  "version": "1.0.0",
+  "description": "Playwright Accessibility Testing Examples",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:debug": "npx playwright test --debug",
+    "codegen": "npx playwright codegen",
+    "test:report": "npx playwright show-report",
+    "install:drivers": "npx playwright install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rbcopenhaver/pw-a11y-testing-examples.git"
+  },
+  "keywords": [],
+  "author": "rbcopenhaver",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/rbcopenhaver/pw-a11y-testing-examples/issues"
+  },
+  "homepage": "https://github.com/rbcopenhaver/pw-a11y-testing-examples#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "@types/node": "^24.3.1"
+  },
+  "dependencies": {
+    "@axe-core/playwright": "^4.10.2"
+  }
+}
