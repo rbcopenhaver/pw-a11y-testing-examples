@@ -30,8 +30,10 @@ export default defineConfig({
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
-  },
-
+    /* Enable video recording for all tests. */
+       video: 'retain-on-failure',},
+  // Set a global timeout of 30 seconds for each test
+    timeout: 60 * 1000, 
   /* Configure projects for major browsers */
   projects: [
     {
